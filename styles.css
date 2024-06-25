@@ -1,14 +1,10 @@
 body {
-    background-color: hsla(162, 86%, 14%, 0.384); 
+    background-color: #f0f8ff; /* Light blue background */
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
 }
-nav a {
-    margin: 10px;
-    text-decoration: none;
-    color: hsla(315, 100%, 40%, 0.582);
-}
+
 nav a.button {
     display: inline-block;
     padding: 10px 20px;
@@ -21,19 +17,16 @@ nav a.button {
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
 }
-.history{
-    text-align: center;
-    font-size: 20px;
-}
 
 nav a.button:hover {
     background-color: white;
     color: #007acc;
 }
 
-
-nav a.button:active,
-nav a.button:focus {
-    outline: none;
-    box-shadow: 0 0 5px #007acc36;
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav a.button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
